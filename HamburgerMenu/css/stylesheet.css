@@ -3,7 +3,8 @@
 }
 
 #navbar {
-    background-color: rgb(119, 189, 119);
+    background-color: rgb(250, 142, 142);
+
 
     display: flex;
     align-items: center;
@@ -15,7 +16,6 @@
 
 #navbar:hover {
     box-shadow: 0px 5px 10px black;
-
 }
 
 #navbar a {
@@ -28,11 +28,9 @@
 #menu {
     display: flex;
     flex-direction: column;
-
-    /* border: 1px solid red; */
     
     padding: .5rem;
-    margin: 5rem;
+    margin: 3rem;
 
     overflow-wrap: break-word;
 }
@@ -40,14 +38,15 @@
 .entree {
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
 
     margin-bottom: 10px;
 }
 
 .main_course {
     display:flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
 
     margin-bottom: 10px;
 }
@@ -55,25 +54,70 @@
 .drinks {
     display: flex;
     justify-content: space-evenly;
+
+    text-align: center;
 }
 
-.item {
+.item_top {
     border: 2px solid rgb(87, 83, 83);
+    background-color: rgb(255, 231, 231);
 
     width: 15%;
     height: auto;
 
     padding: .5rem;
 
-    box-shadow: 5px 5px 5px rgb(119, 189, 119);
-
+    box-shadow: 5px 5px 5px rgb(250, 142, 142);
 }
 
-.item:hover {
+.item_top:hover {
     box-shadow: -5px -5px 5px black;
 }
 
-.item img {
+.item_top img {
+    height: auto;
+    width: 100%;
+}
+
+.item_middle {
+    border: 2px solid rgb(87, 83, 83);
+    background-color: rgb(255, 231, 231);
+
+    width: 15%;
+    height: auto;
+
+    padding: .5rem;
+
+    box-shadow: 5px 5px 5px rgb(250, 142, 142);
+}
+
+.item_middle:hover {
+    box-shadow: -5px -5px 5px black;
+}
+
+.item_middle img {
+    height: auto;
+    width: 100%;
+}
+
+.item_bottom {
+    border: 2px solid rgb(87, 83, 83);
+    background-color: rgb(255, 231, 231);
+
+
+    width: 15%;
+    height: auto;
+
+    padding: .5rem;
+
+    box-shadow: 5px 5px 5px rgb(250, 142, 142);
+}
+
+.item_bottom:hover {
+    box-shadow: -5px -5px 5px black;
+}
+
+.item_bottom img {
     height: auto;
     width: 100%;
 }
@@ -87,6 +131,14 @@ h2 {
     margin: 1rem 0rem;
 }
 
-img {
-    object-fit: fill;
+body {
+    background-color: rgb(255, 201, 201);
 }
+
+button {
+    background-color: rgb(255, 201, 201);
+}
+
+/* img {
+    object-fit: fill;
+} */
