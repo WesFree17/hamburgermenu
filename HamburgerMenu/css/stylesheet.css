@@ -12,6 +12,7 @@
     
 
     padding: 1rem;
+    
 }
 
 #navbar:hover {
@@ -34,6 +35,22 @@
 
     overflow-wrap: break-word;
 }
+
+#nav-links {
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+   }
 
 .entree {
     display: flex;
@@ -137,8 +154,25 @@ body {
 
 button {
     background-color: rgb(255, 201, 201);
+
+    width: 100%;
 }
 
-/* img {
-    object-fit: fill;
-} */
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Display the navigation links only when the screen size is large */
+@media screen and (min-width: 500px) {
+    #nav-links {
+      display: block;
+    }
+   }
+   
+   /* Hide the navigation links when the screen size is small */
+   @media screen and (max-width: 499px) {
+    #nav-links {
+      display: none ;
+    }
+   }
